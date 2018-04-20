@@ -1,0 +1,51 @@
+{
+  "name": "jackinthebox",
+  "version": "1.0.0",
+  "description": "Project scaffolding powered with gulp, pug, scss and webpack",
+  "repository": "lyutkin/jackinthebox",
+  "keywords": [
+    "scaffolding",
+    "gulp",
+    "pug",
+    "scss",
+    "babel",
+    "hot reaload",
+    "performance",
+    "design"
+  ],
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.7",
+    "cross-env": "^5.1.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.1.0",
+    "normalize-scss": "^7.0.1",
+    "run-sequence": "^2.2.1",
+    "turbo-scss": "^1.0.0",
+    "webpack": "^4.6.0",
+    "webpack-stream": "^4.0.3"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "npm run dev",
+    "zip": "gulp zip",
+    "dev": "cross-env NODE_ENV=development gulp",
+    "prod": "cross-env NODE_ENV=production gulp prod"
+  }
+}
