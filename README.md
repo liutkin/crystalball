@@ -11,7 +11,13 @@
 - [`imagemin`](https://github.com/imagemin/imagemin) for images optimization.
 
 # Getting started
-- Install via npm: `npm install jackinthebox`.
+- Clone the repository and install all dependencies via npm:
+```
+git clone https://github.com/lyutkin/jackinthebox.git
+cd jackinthebox
+npm install && npm start
+```
+
 - Commands:
 	- `npm start` to start web server with hot reloading.
 	- `npm test` to run tests.
