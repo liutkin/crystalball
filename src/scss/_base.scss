@@ -1,26 +1,20 @@
 html {
+  box-sizing: border-box;
   font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 a {
   color: $color_primary;
   &:hover,
   &:focus {
-    @include respondTo(desktop, min) {
-      color: lighten($color_primary, 10%);
-    }
+    color: lighten($color_primary, 10%);
   }
-}
-
-a,
-button {
-  @include respondTo(desktop, min) {
-    transition: background-color 0.2s ease, color 0.2s ease;
-  }
-}
-
-p {
-  padding: 0.6em 0;
 }
 
 label {
@@ -30,6 +24,7 @@ label {
 img {
   max-width: 100%;
   max-height: 100%;
+  -webkit-user-drag: none;
 }
 
 input[type='text'],
