@@ -1339,12 +1339,25 @@
   border-width: 3px;
 }
 
-.border-4 {
-  border-width: 4px;
+.border-bottom-1 {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 1px;
+  border-left-width: 0;
 }
 
-.border-5 {
-  border-width: 5px;
+.border-bottom-2 {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 2px;
+  border-left-width: 0;
+}
+
+.border-bottom-3 {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 3px;
+  border-left-width: 0;
 }
 
 .border-solid {

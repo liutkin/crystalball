@@ -2,9 +2,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var runSequence = require('run-sequence');
 var pug = require('gulp-pug');
-
 var htmlbeautify = require('gulp-html-beautify');
-
 var webpackStream = require('webpack-stream');
 var webpack = require('webpack');
 var uglify = require('gulp-uglify');
@@ -17,13 +15,23 @@ var gcmq = require('gulp-group-css-media-queries');
 var imagemin = require('gulp-imagemin');
 var svgSprite = require('gulp-svg-sprite');
 var zip = require('gulp-zip');
+var faker = require('faker');
 var reload = browserSync.reload;
+
+var config = require('./config');
 
 // pug
 gulp.task('pug', function() {
   return gulp
     .src('src/pug/*.pug')
-    .pipe(pug())
+    .pipe(
+      pug({
+        locals: {
+          faker: faker,
+          config: config
+        }
+      })
+    )
     .on('error', console.log)
     .pipe(gulp.dest('dist'))
     .pipe(reload({ stream: true }));
