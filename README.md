@@ -9,6 +9,7 @@
 - [`webpack`](https://webpack.js.org/) for JS modules.
 - [`jest`](https://facebook.github.io/jest/) for JS testing.
 - [`imagemin`](https://github.com/imagemin/imagemin) for images optimization.
+- [`faker`](https://github.com/marak/Faker.js/) to pull off some random simple content.
 
 # Getting started
 - Clone the repository and install all dependencies via npm:
