@@ -18,7 +18,12 @@ var zip = require('gulp-zip');
 var faker = require('faker');
 var reload = browserSync.reload;
 
-var config = require('./config');
+var getConfig = function() {
+  var config = require('./config');
+  delete require.cache[require.resolve('./config')]; // prevent module caching
+
+  return config;
+};
 
 // pug
 gulp.task('pug', function() {
@@ -28,7 +33,7 @@ gulp.task('pug', function() {
       pug({
         locals: {
           faker: faker,
-          config: config
+          config: getConfig()
         }
       })
     )
@@ -210,6 +215,7 @@ gulp.task('default', ['build'], function() {
     .watch(['dist/*.html', 'dist/style/**/*.css', 'dist/script/*.js'])
     .on('change', reload);
 
+  gulp.watch('config.js', ['build']);
   gulp.watch('src/pug/**/*.pug', ['markup']);
   gulp.watch('src/scss/**/*.scss', ['style']);
   gulp.watch('src/js/**/*.js', ['script']);
