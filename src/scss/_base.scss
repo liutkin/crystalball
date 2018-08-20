@@ -9,6 +9,15 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: $font_default;
+  line-height: 1.7;
+  color: $color_default;
+  background-color: #fff;
+}
+
 a {
   color: $color_primary;
   &:hover,
@@ -24,6 +33,7 @@ label {
 img {
   max-width: 100%;
   max-height: 100%;
+  user-select: none;
   -webkit-user-drag: none;
 }
 

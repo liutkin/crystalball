@@ -1,6 +1,6 @@
 {
   "name": "jackinthebox",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Project scaffolding powered with gulp, pug, scss and webpack",
   "repository": "lyutkin/jackinthebox",
   "keywords": [
@@ -33,9 +33,8 @@
     "gulp-svg-sprite": "^1.4.0",
     "gulp-uglify": "^3.0.0",
     "gulp-zip": "^4.1.0",
-    "normalize-scss": "^7.0.1",
+    "node-sass": "^4.9.3",
     "run-sequence": "^2.2.1",
-    "turbo-scss": "^4.1.1",
     "webpack": "^4.15.1",
     "webpack-stream": "^4.0.3"
   },
