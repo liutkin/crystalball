@@ -84,11 +84,3 @@ textarea:-moz-placeholder {
 textarea {
   resize: vertical;
 }
-
-.page {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
-  color: rgba(0, 0, 0, 0.95);
-  background-color: #fff;
-}
