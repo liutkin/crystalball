@@ -1,6 +1,6 @@
 {
   "name": "jackinthebox",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Project scaffolding powered with gulp, pug, scss and webpack",
   "repository": "lyutkin/jackinthebox",
   "keywords": [
