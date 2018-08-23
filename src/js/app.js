@@ -1,4 +1,3 @@
-import myModuleInit from './myModule/myModuleApp';
+import myModule from "./myModule/myModule";
 
-// test module
-myModuleInit();
+myModule();

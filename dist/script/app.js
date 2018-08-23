@@ -94,19 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _myModuleApp = __webpack_require__(/*! ./myModule/myModuleApp */ \"./src/js/myModule/myModuleApp.js\");\n\nvar _myModuleApp2 = _interopRequireDefault(_myModuleApp);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n// test module\n(0, _myModuleApp2.default)();\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("\n\nvar _myModule = __webpack_require__(/*! ./myModule/myModule */ \"./src/js/myModule/myModule.js\");\n\nvar _myModule2 = _interopRequireDefault(_myModule);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _myModule2.default)();\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ }),
 
-/***/ "./src/js/myModule/myModuleApp.js":
-/*!****************************************!*\
-  !*** ./src/js/myModule/myModuleApp.js ***!
-  \****************************************/
+/***/ "./src/js/myModule/myModule.js":
+/*!*************************************!*\
+  !*** ./src/js/myModule/myModule.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar myModuleInit = function myModuleInit() {\n  console.log('module loaded');\n};\n\nexports.default = myModuleInit;\n\n//# sourceURL=webpack:///./src/js/myModule/myModuleApp.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  console.log(\"my module loaded\");\n};\n\n//# sourceURL=webpack:///./src/js/myModule/myModule.js?");
 
 /***/ })
 
