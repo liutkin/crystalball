@@ -23,6 +23,30 @@
     }
   }
 
+  @if $media == netbook {
+    @if $width == min {
+      @media screen and (min-width: $mq_netbook) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $mq_netbook) {
+        @content;
+      }
+    }
+  }
+
+  @if $media == notebook {
+    @if $width == min {
+      @media screen and (min-width: $mq_notebook) {
+        @content;
+      }
+    } @else if $width == max {
+      @media screen and (max-width: $mq_notebook) {
+        @content;
+      }
+    }
+  }
+
   @if $media == desktop {
     @if $width == min {
       @media screen and (min-width: $mq_desktop) {
@@ -30,30 +54,6 @@
       }
     } @else if $width == max {
       @media screen and (max-width: $mq_desktop) {
-        @content;
-      }
-    }
-  }
-
-  @if $media == widedesktop {
-    @if $width == min {
-      @media screen and (min-width: $mq_widedesktop) {
-        @content;
-      }
-    } @else if $width == max {
-      @media screen and (max-width: $mq_widedesktop) {
-        @content;
-      }
-    }
-  }
-
-  @if $media == hugedesktop {
-    @if $width == min {
-      @media screen and (min-width: $mq_hugedesktop) {
-        @content;
-      }
-    } @else if $width == max {
-      @media screen and (max-width: $mq_hugedesktop) {
         @content;
       }
     }

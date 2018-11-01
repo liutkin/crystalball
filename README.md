@@ -1,24 +1,25 @@
-# Overview
+# 🔮 Crystalball
 
-`jackinthebox` is a frontend project scaffolding tool to get web development quickly up and running. Out of the box it has:
+Crystalball is a web app project scaffolding tool for frontend development.
 
-- [`pug`](https://pugjs.org/api/getting-started.html) HTML templating.
-- [`sass`](https://sass-lang.com/) CSS styling.
-- [`imagemin`](https://github.com/imagemin/imagemin) for images optimization.
-- [`faker`](https://github.com/marak/Faker.js/) to pull off some random simple content.
-- [`webpack`](https://webpack.js.org/) for JS modules.
-- [`jest`](https://facebook.github.io/jest/) for JS testing.
+- [`pug`](https://pugjs.org/api/getting-started.html) templating
+- [`sass`](https://sass-lang.com/) styling
+- [`webpack`](https://webpack.js.org/) bundler
 
 # Getting started
-- Clone the repository and install all dependencies via npm:
+- Clone and install dependencies via npm:
 ```
-git clone https://github.com/lyutkin/jackinthebox.git
-cd jackinthebox
+git clone https://github.com/lyutkin/crystalball.git
+cd crystalball
 npm install && npm start
 ```
 
 - Commands:
-	- `npm start` starts web server with hot reloading.
-	- `npm test` runs tests.
-	- `npm run prod` makes a production build.
-	- `npm run zip` makes a `.zip` archive of `dist` folder.
+	- `npm start` start web server with hot reloading
+	- `npm test` run tests
+	- `npm run prod` make production build
+	- `npm run zip` archive of `dist` folder
+
+# License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

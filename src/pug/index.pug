@@ -1,10 +1,11 @@
 extends layout/default
 
-include mixin/script
+include partial/mixinList
 
 block title
 	title Index
 	
 block content
-	body= faker.lorem.paragraph()
+	body
+		p Do some magic 🔮
 		+script

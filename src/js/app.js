@@ -1,3 +1,1 @@
-import myModule from "./myModule/myModule";
-
-myModule();
+console.log('Do some magic 🔮');

@@ -1,6 +1,9 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  @include respondTo(desktop, min) {
+    font-size: 18px;
+  }
 }
 
 *,
@@ -26,15 +29,18 @@ a {
   }
 }
 
-label {
+button {
   cursor: pointer;
 }
 
 img {
   max-width: 100%;
-  max-height: 100%;
   user-select: none;
   -webkit-user-drag: none;
+}
+
+textarea {
+  resize: vertical;
 }
 
 input[type='text'],
@@ -59,8 +65,4 @@ textarea {
     /* Firefox 18- */
     color: lighten(gray, 20%);
   }
-}
-
-textarea {
-  resize: vertical;
 }

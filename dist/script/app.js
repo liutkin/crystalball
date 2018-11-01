@@ -91,22 +91,9 @@
   !*** ./src/js/app.js ***!
   \***********************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\n\nvar _myModule = __webpack_require__(/*! ./myModule/myModule */ \"./src/js/myModule/myModule.js\");\n\nvar _myModule2 = _interopRequireDefault(_myModule);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _myModule2.default)();\n\n//# sourceURL=webpack:///./src/js/app.js?");
-
-/***/ }),
-
-/***/ "./src/js/myModule/myModule.js":
-/*!*************************************!*\
-  !*** ./src/js/myModule/myModule.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  console.log(\"my module loaded\");\n};\n\n//# sourceURL=webpack:///./src/js/myModule/myModule.js?");
+eval("console.log('Do some magic 🔮');\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ })
 

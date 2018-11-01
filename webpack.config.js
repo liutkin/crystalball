@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   output: {
     path: __dirname + '/dist',
-    filename: 'app.js'
+    filename: 'app.js',
   },
   module: {
     rules: [
@@ -12,19 +12,20 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
-          }
-        }
-      }
-    ]
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-object-rest-spread'],
+          },
+        },
+      },
+    ],
   },
   resolve: {
     alias: {
       vue:
         process.env.NODE_ENV === 'production'
           ? 'vue/dist/vue.common.js'
-          : 'vue/dist/vue.js'
-    }
+          : 'vue/dist/vue.js',
+    },
   },
-  mode: process.env.NODE_ENV || 'development'
+  mode: process.env.NODE_ENV || 'development',
 };
