@@ -1,17 +1,16 @@
 # 🔮 Crystalball
 
-Crystalball is a web app project scaffolding tool for frontend development.
+Crystalball is a web app project scaffolding tool powered with [Gulp](https://gulpjs.com) for frontend development. Out-of-the box it has:
 
 - [`pug`](https://pugjs.org/api/getting-started.html) templating
 - [`sass`](https://sass-lang.com/) styling
-- [`webpack`](https://webpack.js.org/) bundler
+- [`webpack`](https://webpack.js.org/) bundler with [TypeScript](https://www.typescriptlang.org/) support
 
 # Getting started
 - Clone and install dependencies via npm:
 ```
 git clone https://github.com/lyutkin/crystalball.git
-cd crystalball
-npm install && npm start
+cd crystalball && npm install && npm start
 ```
 
 - Commands:

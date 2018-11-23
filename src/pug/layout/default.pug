@@ -3,5 +3,6 @@ html
 	head
 		meta(charset='utf-8')
 		block title
-		link(rel='stylesheet' href='style/app.css')
+		link(rel='stylesheet' href=`style/plugin${envSuffix}.css`)
+		link(rel='stylesheet' href=`style/app${envSuffix}.css`)
 	block content

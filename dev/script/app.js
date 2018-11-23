@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/app.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/app.js":
+/***/ "./src/js/app.ts":
 /*!***********************!*\
-  !*** ./src/js/app.js ***!
+  !*** ./src/js/app.ts ***!
   \***********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('Do some magic 🔮');\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("console.log('Do some magic 🔮');//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYXBwLnRzPzkxYmQiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLGtCQUFaIiwiZmlsZSI6Ii4vc3JjL2pzL2FwcC50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nKCdEbyBzb21lIG1hZ2ljIPCflK4nKTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/app.ts\n");
 
 /***/ })
 

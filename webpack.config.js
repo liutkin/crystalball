@@ -1,31 +1,30 @@
-var webpack = require('webpack');
+const mode = process.env.NODE_ENV;
+const devtool = mode === 'development' ? 'eval-source-map' : false;
 
 module.exports = {
+  devtool,
   output: {
-    path: __dirname + '/dist',
     filename: 'app.js',
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.[js|ts]/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
-            plugins: ['@babel/plugin-proposal-object-rest-spread'],
+            presets: ['@babel/preset-env', '@babel/preset-typescript'],
+            plugins: [
+              '@babel/plugin-proposal-object-rest-spread',
+              '@babel/plugin-proposal-class-properties',
+            ],
           },
         },
       },
     ],
   },
   resolve: {
-    alias: {
-      vue:
-        process.env.NODE_ENV === 'production'
-          ? 'vue/dist/vue.common.js'
-          : 'vue/dist/vue.js',
-    },
+    extensions: ['.ts', '.tsx', '.js'],
   },
-  mode: process.env.NODE_ENV || 'development',
+  mode,
 };
