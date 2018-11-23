@@ -29,6 +29,11 @@ a {
   }
 }
 
+button,
+a {
+  outline: none;
+}
+
 button {
   cursor: pointer;
 }
