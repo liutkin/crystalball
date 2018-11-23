@@ -91,9 +91,10 @@
   !*** ./src/js/app.ts ***!
   \***********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("console.log('Do some magic 🔮');//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYXBwLnRzPzkxYmQiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6IkFBQUFBLE9BQU8sQ0FBQ0MsR0FBUixDQUFZLGtCQUFaIiwiZmlsZSI6Ii4vc3JjL2pzL2FwcC50cy5qcyIsInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nKCdEbyBzb21lIG1hZ2ljIPCflK4nKTtcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/js/app.ts\n");
+"use strict";
+eval("\nconsole.log('Do some magic 🔮');\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvanMvYXBwLnRzPzkxYmQiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sQ0FBQyxHQUFHLENBQUMsa0JBQWtCLENBQUMsQ0FBQyIsImZpbGUiOiIuL3NyYy9qcy9hcHAudHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZygnRG8gc29tZSBtYWdpYyDwn5SuJyk7XG4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/js/app.ts\n");
 
 /***/ })
 

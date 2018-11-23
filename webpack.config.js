@@ -9,11 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.[js|ts]/,
+        test: /\.js/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-typescript'],
+            presets: ['@babel/preset-env'],
             plugins: [
               '@babel/plugin-proposal-object-rest-spread',
               '@babel/plugin-proposal-class-properties',
@@ -21,9 +21,18 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.ts/,
+        use: {
+          loader: 'ts-loader',
+        },
+      },
     ],
   },
   resolve: {
+    alias: {
+      vue$: 'vue/dist/vue.esm.js',
+    },
     extensions: ['.ts', '.tsx', '.js'],
   },
   mode,
