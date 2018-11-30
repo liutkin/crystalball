@@ -4,10 +4,10 @@ import rename from 'gulp-rename';
 
 import addMinToBasename from '../addMinToBasename';
 
-const uglifyJS = () =>
-  src('dev/script/*.js')
+const buildAppJS = () =>
+  src('dev/script/app.js')
     .pipe(uglify())
     .pipe(rename(addMinToBasename))
     .pipe(dest('dist/script'));
 
-export default uglifyJS;
+export default buildAppJS;

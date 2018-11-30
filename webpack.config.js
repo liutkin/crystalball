@@ -1,5 +1,5 @@
-const mode = process.env.NODE_ENV;
-const devtool = mode === 'development' ? 'eval-source-map' : false;
+const devtool =
+  process.env.NODE_ENV === 'development' ? 'eval-source-map' : false;
 
 module.exports = {
   devtool,
@@ -30,10 +30,7 @@ module.exports = {
     ],
   },
   resolve: {
-    alias: {
-      vue$: 'vue/dist/vue.esm.js',
-    },
     extensions: ['.ts', '.tsx', '.js'],
   },
-  mode,
+  mode: process.env.NODE_ENV,
 };

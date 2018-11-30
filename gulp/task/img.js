@@ -1,8 +1,8 @@
 import { src, dest } from 'gulp';
 import imagemin from 'gulp-imagemin';
 
-const optimizeImg = () =>
-  src('dist/img/**/*')
+const img = () =>
+  src('dev/img/**/*')
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -13,4 +13,4 @@ const optimizeImg = () =>
     )
     .pipe(dest('dist/img'));
 
-export default optimizeImg;
+export default img;
