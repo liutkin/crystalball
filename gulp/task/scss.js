@@ -1,8 +1,9 @@
 import { src, dest } from 'gulp';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
-import gcmq from 'gulp-group-css-media-queries';
 import sourcemaps from 'gulp-sourcemaps';
+import postcss from 'gulp-postcss';
+import mqpacker from 'css-mqpacker';
 
 import plumberErrorHandler from '../plumberErrorHandler';
 import { stream } from '../server';
@@ -21,7 +22,7 @@ const scss = () =>
         browsers: ['> 1%'],
       }),
     )
-    .pipe(gcmq())
+    .pipe(postcss([mqpacker()]))
     .pipe(sourcemaps.write())
     .pipe(dest('dev/style'))
     .pipe(stream());
