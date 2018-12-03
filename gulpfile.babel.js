@@ -24,14 +24,9 @@ import sizeCSS from './gulp/task/sizeCSS';
 const markup = series(pug, htmlBeautify);
 const plugin = parallel(pluginJS, pluginCSS);
 const dev = parallel(markup, scss, js, plugin);
-const build = parallel(
-  img,
-  buildAppJS,
-  buildAppCSS,
-  buildPluginJS,
-  buildPluginCSS,
-  sizeJS,
-  sizeCSS,
+const build = series(
+  parallel(img, buildAppJS, buildAppCSS, buildPluginJS, buildPluginCSS),
+  parallel(sizeJS, sizeCSS),
 );
 
 export const prod = series(dev, dist, build);
