@@ -4,11 +4,11 @@ import sourcemaps from 'gulp-sourcemaps';
 
 import plumberErrorHandler from '../plumberErrorHandler';
 
-const pluginJS = () =>
-  src('src/plugin/js/**/*.dev.js')
+const vendorCSS = () =>
+  src('src/vendor/css/**/*.dev.css')
     .pipe(sourcemaps.init())
-    .pipe(concatFiles('plugin.js'))
+    .pipe(concatFiles('vendor.css'))
     .pipe(sourcemaps.write())
-    .pipe(dest('dev/script'));
+    .pipe(dest('dev/style'));
 
-export default pluginJS;
+export default vendorCSS;

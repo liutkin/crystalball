@@ -13,11 +13,15 @@ git clone https://github.com/lyutkin/crystalball.git
 cd crystalball && npm install && npm start
 ```
 
-- Commands:
-	- `npm start` start web server with hot reloading
-	- `npm test` run tests
-	- `npm run prod` make production build
-	- `npm run zip` archive of `dist` folder
+# Commands
+- `npm start` start web server with hot reloading
+- `npm test` run tests
+- `npm run prod` make build in `dist` folder
+- `npm run zip` archive of `dist` folder
+
+# Vendor
+
+Put vendor files in `src/vendor/js` or `src/vendor/css`. Files `*.dev.[js|css]` go for development vendor bundle, `*.prod.[js|css]` for production. It comes in handy if you want to specify separate files for development and production.
 
 # License
 

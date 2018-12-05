@@ -5,11 +5,11 @@ import rename from 'gulp-rename';
 
 import addMinToBasename from '../addMinToBasename';
 
-const buildPluginJS = () =>
-  src('src/plugin/js/**/*.prod.js')
-    .pipe(concatFiles('plugin.js'))
+const buildVendorJS = () =>
+  src('src/vendor/js/**/*.prod.js')
+    .pipe(concatFiles('vendor.js'))
     .pipe(uglify())
     .pipe(rename(addMinToBasename))
     .pipe(dest('dist/script'));
 
-export default buildPluginJS;
+export default buildVendorJS;
