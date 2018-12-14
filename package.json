@@ -1,6 +1,6 @@
 {
   "name": "crystalball",
-  "version": "6.2.0",
+  "version": "6.3.0",
   "description": "Web app project scaffolding tool",
   "repository": "lyutkin/crystalball",
   "keywords": [
@@ -19,7 +19,7 @@
     "zip": "cross-env NODE_ENV=production gulp zip",
     "dev": "cross-env NODE_ENV=development gulp",
     "prod": "cross-env NODE_ENV=production gulp prod",
-    "server": "cross-env PORT=8888 nodemon server.js"
+    "server": "cross-env PORT=8888 DELAY=1500 nodemon ./server/server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
