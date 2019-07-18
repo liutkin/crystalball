@@ -17,11 +17,7 @@ const scss = () =>
         outputStyle: 'expanded',
       }).on('error', sass.logError),
     )
-    .pipe(
-      autoprefixer({
-        browsers: ['> 1%'],
-      }),
-    )
+    .pipe(autoprefixer())
     .pipe(postcss([mqpacker()]))
     .pipe(sourcemaps.write())
     .pipe(dest('dev/style'))
